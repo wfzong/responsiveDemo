@@ -1,0 +1,118 @@
+/*Partials ans Import*/
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+.content {
+  font-size: 0; }
+
+.mbox {
+  font-size: 12px;
+  display: inline-block;
+  height: 300px;
+  background: #CCC;
+  width: 50%;
+  border: solid 10px #333;
+  box-sizing: border-box;
+  padding: 12px; }
+
+/* Variables */
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333; }
+
+/* Nesting */
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+nav li {
+  display: inline-block; }
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none; }
+
+/* Mixins */
+.box {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.border {
+  color: red;
+  font-size: 14px; }
+
+.face {
+  margin: 10px auto;
+  color: red;
+  font-size: 14px; }
+
+/* Extend/Inheritance */
+.message, .success, .error, .warning {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #333; }
+
+.success {
+  border-color: green; }
+
+.error {
+  border-color: red; }
+
+.warning {
+  border-color: yellow; }
+
+/*! Operators */
+.container {
+  width: 100%; }
+
+article[role="main"] {
+  float: left;
+  width: 62.5%; }
+
+aside[role="complementary"] {
+  float: right;
+  width: 31.25%; }
+
+/* if else for while  */
+#item-1 {
+  color: 111;
+  border: solid 12px #333; }
+
+#item-2 {
+  color: 222;
+  border: solid 12px #333; }
+
+#item-3 {
+  color: 333;
+  border: solid 12px #333; }
+
+.item-1 {
+  width: 2em; }
+
+.item-2 {
+  width: 4em; }
+
+.item-3 {
+  width: 6em; }
+
+/* media */
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+  .main {
+    width: 800px; }
+
+  .artBox {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; } }
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .main {
+    width: 1200px; } }
+
+/*# sourceMappingURL=main.css.map */

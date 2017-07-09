@@ -46,12 +46,12 @@ nav a {
   border-radius: 10px; }
 
 .border {
-  color: red;
+  color: blue;
   font-size: 14px; }
 
 .face {
   margin: 10px auto;
-  color: red;
+  color: blue;
   font-size: 14px; }
 
 /* Extend/Inheritance */

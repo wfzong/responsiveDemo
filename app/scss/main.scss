@@ -1,6 +1,7 @@
 //Partials ans Import
 /*Partials ans Import*/
 @import 'reset';
+@import 'background';
 
 .content {
   font-size:0;
@@ -8,7 +9,10 @@
    word-spacing: -4px;
 }
 .mbox {
-  font-size:12px;
+     letter-spacing: 0;
+     word-spacing: 0;
+
+  font-size:22px;
 	display:inline-block;
 	height:300px;
 	background:#CCC;
@@ -16,8 +20,60 @@
   border:solid 10px #333;
   box-sizing:border-box;
   padding:12px;
+  position:relative;
 }
+.mbox:before {
+  content:" ";
+  height:1px;
+  top:10px;
+  left:0;
+  width:100%;
+  position:absolute;
 
+  @include dotted-line();
+}
+.gradient_test {
+  margin-top:30px;
+  width:300px;
+  height:300px;
+  //background:linear-gradient(70deg,blue,white);
+  border:dashed 1px #333;
+  //background-image:linear-gradient(to right, blue, white 80%, orange );
+  //background-size:50px 10px;
+
+  //background:linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.2)), url(./images/test.jpg);
+  //background:radial-gradient(#f0f 20%, rgba(255,255,255,0) 20%, rgba(255,000,255,1) 60% )
+
+
+//background: repeating-linear-gradient(-45deg, red, red 5px, white 5px, white 10px);
+
+background-color: #000;
+background-image: repeating-linear-gradient(90deg, 
+  transparent, transparent 25px, 
+  red 25px, red 40px,
+  blue 1px, blue 160px
+  );
+
+/*
+background-color: #000;
+background-image: 
+repeating-linear-gradient(90deg, 
+      transparent, transparent 50px,
+      rgba(255, 127, 0, 0.25) 50px, rgba(255, 127, 0, 0.25) 56px, 
+      transparent 56px, transparent 63px,
+      rgba(255, 127, 0, 0.25) 63px, rgba(255, 127, 0, 0.25) 69px, 
+      transparent 69px, transparent 116px,
+      rgba(255, 206, 0, 0.35) 116px, rgba(255, 206, 0, 0.35) 166px),
+repeating-linear-gradient(0deg, transparent, transparent 50px, rgba(255, 127, 0, 0.25) 50px,
+      rgba(255, 127, 0, 0.25) 56px, transparent 56px, transparent 63px, rgba(255, 127, 0, 0.25) 63px,
+      rgba(255, 127, 0, 0.25) 69px, transparent 69px, transparent 116px, rgba(255, 206, 0, 0.25) 116px,
+      rgba(255, 206, 0, 0.25) 166px),
+repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(143, 77, 63, 0.25) 5px,
+      rgba(143, 77, 63, 0.25) 10px),
+repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(143, 77, 63, 0.25) 5px,
+      rgba(143, 77, 63, 0.25) 10px) ;*/
+
+}
 //Variables
 /* Variables */
 $font-stack:    Helvetica, sans-serif;

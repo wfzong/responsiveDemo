@@ -1,4 +1,8 @@
 # responsiveDemo
 A responsive demo
 
-> sass --watch app/scss:styles
+```
+gem install sass-globbing
+sass -r sass-globbing --watch app/scss:styles
+
+```

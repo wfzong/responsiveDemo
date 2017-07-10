@@ -1,0 +1,52 @@
+// Gutters to use on the desktop sized site
+$DESKTOP_SIDE_GUTTER: 50px !default;
+// Gutters to use on the tablet sized site
+$TABLET_SIDE_GUTTER: 40px !default;
+// Gutters to use on the mobile sized site
+$MOBILE_SIDE_GUTTER: 20px !default;
+// Margins to use on the desktop sized site
+$DESKTOP_SLICE_MARGIN: 50px !default;
+// Margins to use on the tablet sized site
+$TABLET_SLICE_MARGIN: 40px !default;
+// Margins to use on the mobile sized site
+$MOBILE_SLICE_MARGIN: 20px !default;
+
+
+// Breakpoint to change the tablet gutters into desktop
+$DESKTOP_SIDE_GUTTER_BREAKPOINT: 1024px !default;
+// Breakpoint to change the mobile gutter into tablet
+$TABLET_SIDE_GUTTER_BREAKPOINT: 700px !default;
+// Maximum page width
+$MAXIMUM_PAGE_WIDTH: 1440px !default;
+
+
+
+/**
+ * MARGINS
+ * =============================================================================
+ */
+$MARGIN_XXX_LARGE: 120px !default;
+$MARGIN_XX_LARGE: 80px !default;
+$MARGIN_X_LARGE: 60px !default;
+$MARGIN_LARGE: 40px !default;
+$MARGIN_MEDIUM: 30px !default;
+$MARGIN_SMALL: 20px !default;
+$MARGIN_X_SMALL: 15px !default;
+$MARGIN_XX_SMALL: 10px !default;
+$MARGIN_XXX_SMALL: 5px !default;
+$MARGIN_NONE: 0 !default;
+
+/**
+ * PADDINGS
+ * =============================================================================
+ */
+$PADDING_XXX_LARGE: 120px !default;
+$PADDING_XX_LARGE: 80px !default;
+$PADDING_X_LARGE: 60px !default;
+$PADDING_LARGE: 40px !default;
+$PADDING_MEDIUM: 30px !default;
+$PADDING_SMALL: 20px !default;
+$PADDING_X_SMALL: 15px !default;
+$PADDING_XX_SMALL: 10px !default;
+$PADDING_XXX_SMALL: 5px !default;
+$PADDING_NONE: 0 !default;

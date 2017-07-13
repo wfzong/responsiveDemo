@@ -1,0 +1,23 @@
+@function em($px, $base: 16px){
+    @return ($px / $base) * 1em;
+}
+@function rem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+
+/// Return the font-group map so we can get font defaults more easily
+///
+/// @param {string} $group - Font group map key value
+///
+/// @link https://github.com/cnduk/wc-sass-fonts Require $FONT_GROUPS and $FONT_GROUP_DEFAULT from https://github.com/cnduk/wc-sass-fonts
+@function font-group($group) {
+    @if (map-has-key($FONT_GROUPS, $group)) {
+        @return map-get($FONT_GROUPS, $group);
+    }
+    @else {
+        @warn 'No such font group: `#{$group}`. Falling back to default.';
+        @return $FONT_GROUP_DEFAULT;
+    }
+}

@@ -1,0 +1,187 @@
+@import "../common/*.*";
+html {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+    border: none;
+}
+img {
+    border: none;
+}
+abbr {
+    text-decoration: underline;
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    @include vendor-prefix(text-size-adjust, none);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+em {
+    font-style: italic;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    -moz-osx-font-smoothing: auto;
+    -webkit-font-smoothing: auto;
+    font-variant-ligatures: common-ligatures;
+    color: black;
+    margin:0;
+    padding: 0;
+}
+
+@mixin heading-scale($default, $medium, $large) {
+    @include font-size($default);
+
+    @include min-screen($TYPE_MEDIUM_COPY_WIDTH) {
+        @include font-size($medium);
+    }
+
+    @include min-screen($TYPE_LARGE_COPY_WIDTH) {
+        @include font-size($large);
+    }
+}
+
+%h-alpha {
+    @include font(null,50px, 300, 50px);
+    @include min-screen($TYPE_LARGE_COPY_WIDTH) {
+        @include font-size(100px);
+        @include line-height(100px);
+    }
+}
+
+%h-beta {
+    @include font("NEW GROTESK SQUARE", 45px, 300, 45px);
+    @include min-screen($TYPE_LARGE_COPY_WIDTH) {
+        @include font-size(65px);
+        @include line-height(65px);
+    }
+}
+
+%h-gamma {
+    @include font("NEW GROTESK SQUARE", 40px, 300, 40px);
+    @include min-screen($TYPE_LARGE_COPY_WIDTH) {
+        @include font-size(45px);
+        @include line-height(45px);
+    }
+}
+
+%h-delta {
+    @include font("NEW GROTESK SQUARE", 35px, 300, 35px);
+    @include min-screen($TYPE_LARGE_COPY_WIDTH) {
+        @include font-size(40px);
+        @include line-height(40px);
+    }
+}
+
+%h-epsilon {
+    @include font("NEW GROTESK SQUARE", 30px, 300, 30px);
+    @include min-screen($TYPE_LARGE_COPY_WIDTH) {
+        @include font-size(35px);
+        @include line-height(35px);
+    }
+}
+
+%h-zeta {
+    @include font("NEW GROTESK SQUARE", 25px, 300, 25px);
+    @include min-screen($TYPE_LARGE_COPY_WIDTH) {
+        @include font-size(30px);
+        @include line-height(30px);
+    }
+}
+
+h1, .h-alpha {
+    @extend %h-alpha;
+}
+
+h2, .h-beta {
+    @extend %h-beta;
+}
+
+h3, .h-gamma {
+    @extend %h-gamma;
+}
+
+h4, .h-delta {
+    @extend %h-delta;
+}
+
+h5, .h-epsilon {
+    @extend %h-epsilon;
+}
+
+h6, .h-zeta {
+    @extend %h-zeta;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid black;
+    height: 0;
+    margin: 10px 0;
+}
+
+input {
+
+}
+
+mark {
+    background-color: #e6e7e8;
+    padding: 4px 0;
+}
+
+p {
+    @include font("EXCHANGE WEB", 17px, 300, 23px);
+    color: black;
+    margin: 10px 0;
+
+    @include min-screen($TYPE_LARGE_COPY_WIDTH) {
+        @include font-size(19px);
+        @include line-height(27px);
+    }
+}
+
+
+
+small {
+    @include font("BRUTAL", 12px, 300, 12px);
+}
+
+strong {
+    @include font-weight(700);
+}
+
+ul,
+ol {
+    @include font-family("BRUTAL");
+    list-style-type: none;
+}
+
+li {
+    position: relative; 
+}
+
+ul {
+    
+}
+
+ol {
+    counter-reset: section;
+
+    li {
+        counter-increment: section;
+    }
+
+    li:not([class]):before {
+        content: counters(section,".")".";
+        font-weight: bold;
+        left: -30px;
+        position: absolute;
+    }
+}

@@ -1,24 +1,32 @@
+/**
+ * 排版
+ * ============================================================================
+ */
+/// The default master font size used for conversion in media-query mixins
+/// 根元素的默认size 以及主要的media-query切换点
+$MASTER_FONT_SIZE: 16px;
+$TYPE_FONT_SIZE: $MASTER_FONT_SIZE !default;
+$TYPE_LINE_HEIGHT: 24px !default;
+$TYPE_MEDIUM_COPY_WIDTH: 700px !default;
+$TYPE_LARGE_COPY_WIDTH: 1024px !default;
+$TYPE_MAXIMUM_COPY_WIDTH: 1440px !default;
+
+$MAIN_NAVIGATION_HEIGHT:60px !default;
+
+
 // Gutters to use on the desktop sized site
 $DESKTOP_SIDE_GUTTER: 50px !default;
 // Gutters to use on the tablet sized site
 $TABLET_SIDE_GUTTER: 40px !default;
 // Gutters to use on the mobile sized site
 $MOBILE_SIDE_GUTTER: 20px !default;
+
 // Margins to use on the desktop sized site
 $DESKTOP_SLICE_MARGIN: 50px !default;
 // Margins to use on the tablet sized site
 $TABLET_SLICE_MARGIN: 40px !default;
 // Margins to use on the mobile sized site
 $MOBILE_SLICE_MARGIN: 20px !default;
-
-
-// Breakpoint to change the tablet gutters into desktop
-$DESKTOP_SIDE_GUTTER_BREAKPOINT: 1024px !default;
-// Breakpoint to change the mobile gutter into tablet
-$TABLET_SIDE_GUTTER_BREAKPOINT: 700px !default;
-// Maximum page width
-$MAXIMUM_PAGE_WIDTH: 1440px !default;
-
 
 
 /**
@@ -50,3 +58,41 @@ $PADDING_X_SMALL: 15px !default;
 $PADDING_XX_SMALL: 10px !default;
 $PADDING_XXX_SMALL: 5px !default;
 $PADDING_NONE: 0 !default;
+
+
+
+/**
+ * Font weights
+ */
+$FONT_WEIGHT_THIN: 100;
+$FONT_WEIGHT_EXTRA_LIGHT: 200;
+$FONT_WEIGHT_LIGHT: 300;
+$FONT_WEIGHT_NORMAL: 400;
+$FONT_WEIGHT_BOOK: 400;
+$FONT_WEIGHT_MEDIUM: 500;
+$FONT_WEIGHT_SEMI_BOLD: 600;
+$FONT_WEIGHT_DEMI_BOLD: 600;
+$FONT_WEIGHT_BOLD: 700;
+$FONT_WEIGHT_BLACK: 800;
+$FONT_WEIGHT_FAT: 800;
+$FONT_WEIGHT_EXTRA_BOLD: 800;
+$FONT_WEIGHT_ULTRA: 900;
+
+
+$FONT_WEIGHTS: (
+    'THIN': $FONT_WEIGHT_THIN,
+    'EXTRA LIGHT': $FONT_WEIGHT_EXTRA_LIGHT,
+    'LIGHT': $FONT_WEIGHT_LIGHT,
+    'NORMAL': $FONT_WEIGHT_NORMAL,
+    'BOOK': $FONT_WEIGHT_BOOK,
+    'MEDIUM': $FONT_WEIGHT_MEDIUM,
+    'SEMI BOLD': $FONT_WEIGHT_SEMI_BOLD,
+    'DEMI BOLD': $FONT_WEIGHT_DEMI_BOLD,
+    'BOLD': $FONT_WEIGHT_BOLD,
+    'BLACK': $FONT_WEIGHT_BLACK,
+    'FAT': $FONT_WEIGHT_FAT,
+    'EXTRA BOLD': $FONT_WEIGHT_EXTRA_BOLD,
+    'ULTRA': $FONT_WEIGHT_ULTRA
+);
+
+$FONT_FAMILY: PingFang SC,Hiragino Sans GB,Arial,Microsoft YaHei,Helvetica Neue,sans-serif;

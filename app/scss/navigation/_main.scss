@@ -1,0 +1,122 @@
+@import "../reset/main";
+
+.main_nav {
+	position: relative;
+	z-index: 10;
+	.wrapper {
+		height: $MAIN_NAVIGATION_HEIGHT;
+		border-bottom: 1px solid #EAEAEA;
+		box-shadow: 0px 2px 5px 0 rgba(102, 102, 102, 0.06);
+		.content {
+			max-width: $TYPE_MAXIMUM_COPY_WIDTH;
+			height: $MAIN_NAVIGATION_HEIGHT;
+			position: relative;
+			margin: 0 auto;
+			.logo {
+				position: absolute;
+				top: 0;
+				left: 0;
+				display: block;
+				height: $MAIN_NAVIGATION_HEIGHT;
+				line-height: $MAIN_NAVIGATION_HEIGHT;
+				padding-left: $PADDING_SMALL;
+
+				img {
+					width: 50px;
+					vertical-align: middle;
+				}
+			}
+			nav {
+				@include max-screen($TYPE_LARGE_COPY_WIDTH){
+					display: none;
+				}
+				ul {
+					position: absolute;
+					top: 0;
+					left: 0;
+					text-align: center;
+					width: 100%;
+					list-style: none;
+					font-size: 0;
+
+					li {
+						display: inline-block;
+						padding: 0 15px;
+						height: 60px;
+						line-height: 60px;
+						
+						a {
+							color: #111;
+							@include font-size(14px);
+							@include font-weight(700);
+							
+							&:hover {
+								color: red;
+							}
+						}
+							 
+					}
+				}
+			}
+			.more {
+				@include max-screen($TYPE_LARGE_COPY_WIDTH) {
+					display: none;
+				}
+				border-left: solid 1px #EAEAEA;
+				height: $MAIN_NAVIGATION_HEIGHT;
+				line-height: $MAIN_NAVIGATION_HEIGHT;
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 0 20px;
+				cursor: pointer;
+				a {
+					color: #666;
+					@include font-size(14px);
+					@include font-family("adobe-caslon-pro");
+					font-style: italic;
+				}
+				&:after {
+					content: "";
+					display: inline-block;
+					border-top: 5px solid #000;
+					width: 0;
+					height: 0;
+					border-left: 5px solid transparent;
+					border-right: 5px solid transparent;
+					top: -2px;
+					position: relative;
+				}
+				&:hover {
+					border-bottom: solid 1px #fff;
+				}
+				&:hover:after {
+					border-top: 5px solid #C00;
+				}
+
+				.follow {
+					display: none;
+					padding: 8px;
+					position: absolute;
+					width: 180px;
+					top: 100%;
+					right: 0;
+					margin-top: 1px;
+					border: solid 1px #EAEAEA;
+					border-top: none;
+					
+					@include max-screen($TYPE_MAXIMUM_COPY_WIDTH) {
+						border-right: none;
+					}
+					background: #FFF;
+					text-align: center;
+					cursor: default;
+				}
+				
+				&:hover .follow{
+					display: block;
+				}
+			}
+		}
+	}
+}

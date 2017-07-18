@@ -204,6 +204,14 @@ ol {
     left: -30px;
     position: absolute; }
 
+.has-open-menu {
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0; }
+
 .main_nav {
   position: relative;
   z-index: 10; }
@@ -228,9 +236,9 @@ ol {
           width: 50px;
           vertical-align: middle; }
       @media screen and (max-width: 1024px) {
-        .main_nav .wrapper .content nav {
+        .main_nav .wrapper .content .big {
           display: none; } }
-      .main_nav .wrapper .content nav ul {
+      .main_nav .wrapper .content .big ul {
         position: absolute;
         top: 0;
         left: 0;
@@ -238,18 +246,126 @@ ol {
         width: 100%;
         list-style: none;
         font-size: 0; }
-        .main_nav .wrapper .content nav ul li {
+        .main_nav .wrapper .content .big ul li {
           display: inline-block;
           padding: 0 15px;
           height: 60px;
           line-height: 60px; }
-          .main_nav .wrapper .content nav ul li a {
+          .main_nav .wrapper .content .big ul li a {
             color: #111;
             font-size: 14px;
             font-size: 0.875rem;
             font-weight: 700; }
-            .main_nav .wrapper .content nav ul li a:hover {
+            .main_nav .wrapper .content .big ul li a:hover {
               color: red; }
+      @media screen and (min-width: 1025px) {
+        .main_nav .wrapper .content .small {
+          display: none; } }
+      .main_nav .wrapper .content .small .trigger {
+        border-left: solid 1px #EAEAEA;
+        height: 60px;
+        line-height: 60px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0 20px;
+        cursor: pointer; }
+        .main_nav .wrapper .content .small .trigger span {
+          display: inline-block;
+          height: 20px;
+          width: 20px;
+          vertical-align: middle;
+          overflow: hidden;
+          text-indent: 100em;
+          background: url(../images/nav_icon.png) 0 0 no-repeat;
+          background-size: 40px; }
+        .main_nav .wrapper .content .small .trigger.close span {
+          background-position: -20px 0; }
+      .main_nav .wrapper .content .small .mobile_nav {
+        background: #fff;
+        z-index: 20;
+        position: fixed;
+        width: 100%;
+        top: 62px;
+        bottom: 0;
+        overflow: auto;
+        display: none; }
+        .main_nav .wrapper .content .small .mobile_nav ul {
+          margin: 0 20px;
+          padding: 0; }
+          .main_nav .wrapper .content .small .mobile_nav ul li {
+            border-bottom: 1px solid #EAEAEA;
+            font-size: 15px;
+            font-size: 0.9375rem;
+            font-weight: 700;
+            line-height: 60px; }
+            .main_nav .wrapper .content .small .mobile_nav ul li a {
+              display: block;
+              color: #111; }
+              .main_nav .wrapper .content .small .mobile_nav ul li a:hover {
+                color: red; }
+        .main_nav .wrapper .content .small .mobile_nav .sns {
+          text-align: center;
+          background: #F4F4F4;
+          margin-top: 30px;
+          padding-top: 30px; }
+          .main_nav .wrapper .content .small .mobile_nav .sns span {
+            color: #666;
+            font-size: 14px;
+            font-size: 0.875rem;
+            font-family: adobe-caslon-pro, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+            font-style: italic; }
+          .main_nav .wrapper .content .small .mobile_nav .sns ol {
+            text-align: center;
+            padding: 0;
+            margin: 8px 0; }
+            .main_nav .wrapper .content .small .mobile_nav .sns ol li {
+              display: inline-block;
+              list-style: none;
+              padding: 12px;
+              position: relative; }
+              .main_nav .wrapper .content .small .mobile_nav .sns ol li + :before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 20px;
+                top: 14px;
+                left: -3px;
+                background: #c3b7b7; }
+              .main_nav .wrapper .content .small .mobile_nav .sns ol li a {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                background: url(../images/sns_icons.jpg) 0 0 no-repeat;
+                background-size: 200px;
+                border-radius: 26px;
+                text-indent: 100em;
+                overflow: hidden; }
+              .main_nav .wrapper .content .small .mobile_nav .sns ol li.wb:hover {
+                background-color: #ffd879; }
+              .main_nav .wrapper .content .small .mobile_nav .sns ol li.wb a {
+                background-position: -28px -20px; }
+              .main_nav .wrapper .content .small .mobile_nav .sns ol li.fb:hover {
+                background-color: #39579d; }
+              .main_nav .wrapper .content .small .mobile_nav .sns ol li.fb a {
+                background-position: -114.5px -105px; }
+              .main_nav .wrapper .content .small .mobile_nav .sns ol li.tw:hover {
+                background-color: #22abf3; }
+              .main_nav .wrapper .content .small .mobile_nav .sns ol li.tw a {
+                background-position: -28px -105px; }
+              .main_nav .wrapper .content .small .mobile_nav .sns ol li.ins:hover {
+                background-color: #a87c63; }
+              .main_nav .wrapper .content .small .mobile_nav .sns ol li.ins a {
+                background-position: -114.5px -62.5px; }
+          .main_nav .wrapper .content .small .mobile_nav .sns .mail_to_me {
+            border: 1px solid #C00000;
+            display: inline-block;
+            color: #C00000;
+            padding: 10px 15px;
+            margin: 15px auto 30px auto; }
+            .main_nav .wrapper .content .small .mobile_nav .sns .mail_to_me:hover {
+              color: white;
+              background: #C00000; }
       .main_nav .wrapper .content .more {
         border-left: solid 1px #EAEAEA;
         height: 60px;

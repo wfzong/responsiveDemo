@@ -7,6 +7,58 @@
     left: 0;
     top: 0;
 }
+@mixin sns_icons(){
+
+	ol {
+		text-align: center;
+		padding: 0;
+		margin: 8px 0;
+		line-height: normal;
+		li {
+			display: inline-block;
+			list-style: none;
+			padding: 12px;
+			position: relative;
+			line-height: normal;
+			&+:before{
+				content: "";
+				position: absolute;
+				width: 1px;
+				height: 20px;
+				top: 14px;
+				left: -3px;
+				background: #c3b7b7;
+			}
+			a {
+				display: inline-block;
+				width: 50px*0.5;
+				height: 50px*0.5;
+				background: url(../images/sns_icons.jpg) 0 0 no-repeat;
+				background-size: 400px*0.5;
+				border-radius: 26px;
+				text-indent: 100em;
+				overflow: hidden;
+			}
+			&.wb {
+				&:hover {background-color: #ffd879;}
+				a {background-position: -56px*0.5 -40px*0.5;}
+			}
+			&.fb {
+				&:hover {background-color: #39579d;}
+				a {background-position: -229px*0.5 -210px*0.5;}
+			}
+			&.tw {
+				&:hover {background-color: #22abf3;}
+				a {background-position: -56px*0.5 -210px*0.5;}
+			}
+			&.ins {
+				&:hover {background-color: #a87c63;}
+				a {background-position: -229px*0.5 -125px*0.5;}
+			}
+		}
+	}
+
+}
 .main_nav {
 	position: relative;
 	z-index: 10;
@@ -125,6 +177,7 @@
 						}
 					}
 					.sns {
+						@include sns_icons();
 						text-align: center;
 						background: #F4F4F4;
 						margin-top: 30px;
@@ -134,53 +187,6 @@
 							@include font-size(14px);
 							@include font-family("adobe-caslon-pro");
 							font-style: italic;
-						}
-						ol {
-							text-align: center;
-							padding: 0;
-							margin: 8px 0;
-							li {
-								display: inline-block;
-								list-style: none;
-								padding: 12px;
-								position: relative;
-								&+:before{
-									content: "";
-									position: absolute;
-									width: 1px;
-									height: 20px;
-									top: 14px;
-									left: -3px;
-									background: #c3b7b7;
-								}
-								a {
-									display: inline-block;
-									width: 50px*0.5;
-									height: 50px*0.5;
-									background: url(../images/sns_icons.jpg) 0 0 no-repeat;
-									background-size: 400px*0.5;
-									border-radius: 26px;
-									text-indent: 100em;
-									overflow: hidden;
-								}
-
-								&.wb {
-									&:hover {background-color: #ffd879;}
-									a {background-position: -56px*0.5 -40px*0.5;}
-								}
-								&.fb {
-									&:hover {background-color: #39579d;}
-									a {background-position: -229px*0.5 -210px*0.5;}
-								}
-								&.tw {
-									&:hover {background-color: #22abf3;}
-									a {background-position: -56px*0.5 -210px*0.5;}
-								}
-								&.ins {
-									&:hover {background-color: #a87c63;}
-									a {background-position: -229px*0.5 -125px*0.5;}
-								}
-							}
 						}
 						.mail_to_me {
 							border: 1px solid #C00000;
@@ -233,12 +239,13 @@
 				}
 
 				.follow {
+					@include sns_icons();
 					display: none;
-					padding: 8px;
+					padding: 0 8px;
 					position: absolute;
-					width: 180px;
 					top: 100%;
 					right: 0;
+					width: 218px;
 					margin-top: 1px;
 					border: solid 1px #EAEAEA;
 					border-top: none;

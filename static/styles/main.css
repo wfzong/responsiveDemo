@@ -194,6 +194,10 @@ ol {
 li {
   position: relative; }
 
+ul {
+  padding: 0;
+  margin: 0; }
+
 ol {
   counter-reset: section; }
   ol li {
@@ -309,21 +313,17 @@ ol {
           background: #F4F4F4;
           margin-top: 30px;
           padding-top: 30px; }
-          .main_nav .wrapper .content .small .mobile_nav .sns span {
-            color: #666;
-            font-size: 14px;
-            font-size: 0.875rem;
-            font-family: adobe-caslon-pro, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
-            font-style: italic; }
           .main_nav .wrapper .content .small .mobile_nav .sns ol {
             text-align: center;
             padding: 0;
-            margin: 8px 0; }
+            margin: 8px 0;
+            line-height: normal; }
             .main_nav .wrapper .content .small .mobile_nav .sns ol li {
               display: inline-block;
               list-style: none;
               padding: 12px;
-              position: relative; }
+              position: relative;
+              line-height: normal; }
               .main_nav .wrapper .content .small .mobile_nav .sns ol li + :before {
                 content: "";
                 position: absolute;
@@ -357,6 +357,12 @@ ol {
                 background-color: #a87c63; }
               .main_nav .wrapper .content .small .mobile_nav .sns ol li.ins a {
                 background-position: -114.5px -62.5px; }
+          .main_nav .wrapper .content .small .mobile_nav .sns span {
+            color: #666;
+            font-size: 14px;
+            font-size: 0.875rem;
+            font-family: adobe-caslon-pro, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+            font-style: italic; }
           .main_nav .wrapper .content .small .mobile_nav .sns .mail_to_me {
             border: 1px solid #C00000;
             display: inline-block;
@@ -400,21 +406,310 @@ ol {
           border-top: 5px solid #C00; }
         .main_nav .wrapper .content .more .follow {
           display: none;
-          padding: 8px;
+          padding: 0 8px;
           position: absolute;
-          width: 180px;
           top: 100%;
           right: 0;
+          width: 218px;
           margin-top: 1px;
           border: solid 1px #EAEAEA;
           border-top: none;
           background: #FFF;
           text-align: center;
           cursor: default; }
+          .main_nav .wrapper .content .more .follow ol {
+            text-align: center;
+            padding: 0;
+            margin: 8px 0;
+            line-height: normal; }
+            .main_nav .wrapper .content .more .follow ol li {
+              display: inline-block;
+              list-style: none;
+              padding: 12px;
+              position: relative;
+              line-height: normal; }
+              .main_nav .wrapper .content .more .follow ol li + :before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 20px;
+                top: 14px;
+                left: -3px;
+                background: #c3b7b7; }
+              .main_nav .wrapper .content .more .follow ol li a {
+                display: inline-block;
+                width: 25px;
+                height: 25px;
+                background: url(../images/sns_icons.jpg) 0 0 no-repeat;
+                background-size: 200px;
+                border-radius: 26px;
+                text-indent: 100em;
+                overflow: hidden; }
+              .main_nav .wrapper .content .more .follow ol li.wb:hover {
+                background-color: #ffd879; }
+              .main_nav .wrapper .content .more .follow ol li.wb a {
+                background-position: -28px -20px; }
+              .main_nav .wrapper .content .more .follow ol li.fb:hover {
+                background-color: #39579d; }
+              .main_nav .wrapper .content .more .follow ol li.fb a {
+                background-position: -114.5px -105px; }
+              .main_nav .wrapper .content .more .follow ol li.tw:hover {
+                background-color: #22abf3; }
+              .main_nav .wrapper .content .more .follow ol li.tw a {
+                background-position: -28px -105px; }
+              .main_nav .wrapper .content .more .follow ol li.ins:hover {
+                background-color: #a87c63; }
+              .main_nav .wrapper .content .more .follow ol li.ins a {
+                background-position: -114.5px -62.5px; }
           @media screen and (max-width: 1440px) {
             .main_nav .wrapper .content .more .follow {
               border-right: none; } }
         .main_nav .wrapper .content .more:hover .follow {
           display: block; }
+
+/**
+ * 排版
+ * ============================================================================
+ */
+/**
+ * MARGINS
+ * =============================================================================
+ */
+/**
+ * PADDINGS
+ * =============================================================================
+ */
+/**
+ * Font weights
+ */
+/**
+ * 排版
+ * ============================================================================
+ */
+/**
+ * MARGINS
+ * =============================================================================
+ */
+/**
+ * PADDINGS
+ * =============================================================================
+ */
+/**
+ * Font weights
+ */
+html {
+  font-size: 16px; }
+
+a {
+  text-decoration: none;
+  border: none; }
+
+img {
+  border: none; }
+
+abbr {
+  text-decoration: underline; }
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -o-text-size-adjust: none;
+  text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; }
+
+em {
+  font-style: italic; }
+
+h1, h2, h3, h4, h5, h6 {
+  -moz-osx-font-smoothing: auto;
+  -webkit-font-smoothing: auto;
+  font-variant-ligatures: common-ligatures;
+  color: black;
+  margin: 0;
+  padding: 0; }
+
+h1, .h-alpha {
+  font-family: PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+  font-size: 50px;
+  font-size: 3.125rem;
+  font-weight: 300;
+  line-height: 50px;
+  line-height: 3.125rem; }
+  @media screen and (min-width: 1024px) {
+    h1, .h-alpha {
+      font-size: 100px;
+      font-size: 6.25rem;
+      line-height: 100px;
+      line-height: 6.25rem; } }
+
+h2, .h-beta {
+  font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+  font-size: 45px;
+  font-size: 2.8125rem;
+  font-weight: 300;
+  line-height: 45px;
+  line-height: 2.8125rem; }
+  @media screen and (min-width: 1024px) {
+    h2, .h-beta {
+      font-size: 65px;
+      font-size: 4.0625rem;
+      line-height: 65px;
+      line-height: 4.0625rem; } }
+
+h3, .h-gamma {
+  font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+  font-size: 40px;
+  font-size: 2.5rem;
+  font-weight: 300;
+  line-height: 40px;
+  line-height: 2.5rem; }
+  @media screen and (min-width: 1024px) {
+    h3, .h-gamma {
+      font-size: 45px;
+      font-size: 2.8125rem;
+      line-height: 45px;
+      line-height: 2.8125rem; } }
+
+h4, .h-delta {
+  font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+  font-size: 35px;
+  font-size: 2.1875rem;
+  font-weight: 300;
+  line-height: 35px;
+  line-height: 2.1875rem; }
+  @media screen and (min-width: 1024px) {
+    h4, .h-delta {
+      font-size: 40px;
+      font-size: 2.5rem;
+      line-height: 40px;
+      line-height: 2.5rem; } }
+
+h5, .h-epsilon {
+  font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 300;
+  line-height: 30px;
+  line-height: 1.875rem; }
+  @media screen and (min-width: 1024px) {
+    h5, .h-epsilon {
+      font-size: 35px;
+      font-size: 2.1875rem;
+      line-height: 35px;
+      line-height: 2.1875rem; } }
+
+h6, .h-zeta {
+  font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+  font-size: 25px;
+  font-size: 1.5625rem;
+  font-weight: 300;
+  line-height: 25px;
+  line-height: 1.5625rem; }
+  @media screen and (min-width: 1024px) {
+    h6, .h-zeta {
+      font-size: 30px;
+      font-size: 1.875rem;
+      line-height: 30px;
+      line-height: 1.875rem; } }
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+  height: 0;
+  margin: 10px 0; }
+
+mark {
+  background-color: #e6e7e8;
+  padding: 4px 0; }
+
+p {
+  font-family: EXCHANGE WEB, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+  font-size: 17px;
+  font-size: 1.0625rem;
+  font-weight: 300;
+  line-height: 23px;
+  line-height: 1.4375rem;
+  color: black;
+  margin: 10px 0; }
+  @media screen and (min-width: 1024px) {
+    p {
+      font-size: 19px;
+      font-size: 1.1875rem;
+      line-height: 27px;
+      line-height: 1.6875rem; } }
+
+small {
+  font-family: BRUTAL, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 12px;
+  line-height: 0.75rem; }
+
+strong {
+  font-weight: 700; }
+
+ul,
+ol {
+  font-family: BRUTAL, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
+  list-style-type: none; }
+
+li {
+  position: relative; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+ol {
+  counter-reset: section; }
+  ol li {
+    counter-increment: section; }
+  ol li:not([class]):before {
+    content: counters(section,".") ".";
+    font-weight: bold;
+    left: -30px;
+    position: absolute; }
+
+.footer {
+  overflow: hidden;
+  background: #111;
+  color: white; }
+  @media screen and (min-width: 1024px) {
+    .footer {
+      height: 60px; } }
+  .footer .footer_wapper {
+    max-width: 1440px;
+    margin: 0 auto; }
+    @media screen and (min-width: 1024px) {
+      .footer .footer_wapper ul {
+        height: 60px;
+        text-align: right;
+        padding-right: 12px; } }
+    .footer .footer_wapper ul li {
+      position: relative;
+      line-height: 60px;
+      padding: 0 12px;
+      display: inline-block;
+      font-size: 14px;
+      font-size: 0.875rem; }
+      .footer .footer_wapper ul li a {
+        color: white; }
+        .footer .footer_wapper ul li a:hover {
+          text-decoration: underline; }
+      .footer .footer_wapper ul li + :before {
+        display: block;
+        position: absolute;
+        top: 24px;
+        left: 0px;
+        content: "";
+        width: 1px;
+        height: 12px;
+        background-color: rgba(255, 255, 255, 0.4); }
 
 /*# sourceMappingURL=main.css.map */

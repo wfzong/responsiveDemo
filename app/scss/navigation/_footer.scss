@@ -1,0 +1,48 @@
+@import "../reset/main";
+
+.footer {
+    overflow: hidden;
+    background: #111;
+    color: white;
+
+    @include min-screen($TYPE_LARGE_COPY_WIDTH){
+        height:60px;
+    }
+    & &_wapper {
+        max-width: $TYPE_MAXIMUM_COPY_WIDTH;
+        margin: 0 auto;
+
+        
+        ul {
+            @include min-screen($TYPE_LARGE_COPY_WIDTH){
+                height:60px;
+                text-align: right;
+                padding-right: 12px;
+            }
+            li {
+                position: relative;
+                line-height: 60px;
+                padding: 0 12px;
+                a {
+                    color: white;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+                
+                display: inline-block;
+                @include font-size(14px);
+                &+:before {
+                    display: block;
+                    position: absolute;
+                    top: 24px;
+                    left: 0px;
+                    content: "";
+                    width: 1px;
+                    height: 12px;
+                    background-color: rgba(255,255,255,0.4);
+                }
+            }
+        }
+    }
+}

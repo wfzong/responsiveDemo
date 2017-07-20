@@ -2,7 +2,7 @@
 
 .footer {
     overflow: hidden;
-    background: #111;
+    background: #222;
     color: white;
 
     @include min-screen($TYPE_LARGE_COPY_WIDTH){
@@ -11,14 +11,36 @@
     & &_wapper {
         max-width: $TYPE_MAXIMUM_COPY_WIDTH;
         margin: 0 auto;
+        position: relative;
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            display: block;
+            height: $MAIN_NAVIGATION_HEIGHT;
+            line-height: $MAIN_NAVIGATION_HEIGHT;
+            padding-left: $PADDING_SMALL;
+
+            img {
+                width: 50px;
+                vertical-align: middle;
+            }
+            @include max-screen($TYPE_MEDIUM_COPY_WIDTH){
+                top: auto;
+                left: auto;
+                right: 8px;
+                bottom: 0;
+            }
+        }
 
         
         ul {
-            @include min-screen($TYPE_LARGE_COPY_WIDTH){
-                height:60px;
-                text-align: right;
-                padding-right: 12px;
-            }
+            
+            height:60px;
+            text-align: right;
+            padding-right: 12px;
             li {
                 position: relative;
                 line-height: 60px;
@@ -42,6 +64,28 @@
                     height: 12px;
                     background-color: rgba(255,255,255,0.4);
                 }
+            }
+            @include max-screen($TYPE_MEDIUM_COPY_WIDTH){
+                height: auto;
+                text-align: left;
+                padding: 0;
+                li {
+                    display: block;
+                    &+:before {
+                        width: 100%;
+                        height: 1px;
+                        top: 0;
+                        background: #333;
+                        position: relative;
+                    }
+                }
+                li:last-child {
+                    background:#111;
+                    &:before {
+                        display: none;
+                    }
+                }
+                
             }
         }
     }

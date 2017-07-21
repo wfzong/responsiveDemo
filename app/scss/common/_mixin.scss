@@ -1,12 +1,10 @@
 @import "variable";
 @mixin max-screen($res) {
-    //@media screen and (max-width: em($res, $MASTER_FONT_SIZE)) {
     @media screen and (max-width: $res) {
         @content;
     }
 }
 @mixin min-screen($res) {
-    //@media screen and (min-width: em($res, $MASTER_FONT_SIZE)) {
     @media screen and (min-width: $res) {
         @content;
     }
@@ -107,31 +105,21 @@
         font-family: $FONT_FAMILY;
     }
 }
-/// Helper to set "responsive (rem)" ```font-size```
-///
+
 /// @param {size} $size - The font size
 /// @param {boolean} $important [false] - Whether to force the font size with ```!important```
-///
-/// @require rem
 @mixin font-size($size, $important: false) {
     @if ($important) {
         font-size: $size !important;
-        font-size: rem($size) !important;
     }
     @else {
         font-size: $size;
-        font-size: rem($size);
     }
 }
 
-/// Helper to set "responsive (rem)" ```line-height```
-///
 /// @param {size} $size - The line-height
-///
-/// @require rem
 @mixin line-height($size) {
     line-height: $size;
-    line-height: rem($size);
 }
 
 

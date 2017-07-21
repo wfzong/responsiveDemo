@@ -68,86 +68,62 @@ h1, h2, h3, h4, h5, h6 {
 h1, .h-alpha {
   font-family: PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 50px;
-  font-size: 3.125rem;
   font-weight: 300;
-  line-height: 50px;
-  line-height: 3.125rem; }
+  line-height: 50px; }
   @media screen and (min-width: 1024px) {
     h1, .h-alpha {
       font-size: 100px;
-      font-size: 6.25rem;
-      line-height: 100px;
-      line-height: 6.25rem; } }
+      line-height: 100px; } }
 
 h2, .h-beta {
   font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 45px;
-  font-size: 2.8125rem;
   font-weight: 300;
-  line-height: 45px;
-  line-height: 2.8125rem; }
+  line-height: 45px; }
   @media screen and (min-width: 1024px) {
     h2, .h-beta {
       font-size: 65px;
-      font-size: 4.0625rem;
-      line-height: 65px;
-      line-height: 4.0625rem; } }
+      line-height: 65px; } }
 
 h3, .h-gamma {
   font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 40px;
-  font-size: 2.5rem;
   font-weight: 300;
-  line-height: 40px;
-  line-height: 2.5rem; }
+  line-height: 40px; }
   @media screen and (min-width: 1024px) {
     h3, .h-gamma {
       font-size: 45px;
-      font-size: 2.8125rem;
-      line-height: 45px;
-      line-height: 2.8125rem; } }
+      line-height: 45px; } }
 
 h4, .h-delta {
   font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 35px;
-  font-size: 2.1875rem;
   font-weight: 300;
-  line-height: 35px;
-  line-height: 2.1875rem; }
+  line-height: 35px; }
   @media screen and (min-width: 1024px) {
     h4, .h-delta {
       font-size: 40px;
-      font-size: 2.5rem;
-      line-height: 40px;
-      line-height: 2.5rem; } }
+      line-height: 40px; } }
 
 h5, .h-epsilon {
   font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 30px;
-  font-size: 1.875rem;
   font-weight: 300;
-  line-height: 30px;
-  line-height: 1.875rem; }
+  line-height: 30px; }
   @media screen and (min-width: 1024px) {
     h5, .h-epsilon {
       font-size: 35px;
-      font-size: 2.1875rem;
-      line-height: 35px;
-      line-height: 2.1875rem; } }
+      line-height: 35px; } }
 
 h6, .h-zeta {
   font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 25px;
-  font-size: 1.5625rem;
   font-weight: 300;
-  line-height: 25px;
-  line-height: 1.5625rem; }
+  line-height: 25px; }
   @media screen and (min-width: 1024px) {
     h6, .h-zeta {
       font-size: 30px;
-      font-size: 1.875rem;
-      line-height: 30px;
-      line-height: 1.875rem; } }
+      line-height: 30px; } }
 
 hr {
   border: none;
@@ -162,26 +138,20 @@ mark {
 p {
   font-family: EXCHANGE WEB, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 17px;
-  font-size: 1.0625rem;
   font-weight: 300;
   line-height: 23px;
-  line-height: 1.4375rem;
   color: black;
   margin: 10px 0; }
   @media screen and (min-width: 1024px) {
     p {
       font-size: 19px;
-      font-size: 1.1875rem;
-      line-height: 27px;
-      line-height: 1.6875rem; } }
+      line-height: 27px; } }
 
 small {
   font-family: BRUTAL, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 12px;
-  font-size: 0.75rem;
   font-weight: 300;
-  line-height: 12px;
-  line-height: 0.75rem; }
+  line-height: 12px; }
 
 strong {
   font-weight: 700; }
@@ -258,7 +228,6 @@ ol {
           .main_nav .wrapper .content .big ul li a {
             color: #111;
             font-size: 14px;
-            font-size: 0.875rem;
             font-weight: 700; }
             .main_nav .wrapper .content .big ul li a:hover {
               color: red; }
@@ -300,7 +269,6 @@ ol {
           .main_nav .wrapper .content .small .mobile_nav ul li {
             border-bottom: 1px solid #EAEAEA;
             font-size: 15px;
-            font-size: 0.9375rem;
             font-weight: 700;
             line-height: 60px; }
             .main_nav .wrapper .content .small .mobile_nav ul li a {
@@ -360,7 +328,6 @@ ol {
           .main_nav .wrapper .content .small .mobile_nav .sns span {
             color: #666;
             font-size: 14px;
-            font-size: 0.875rem;
             font-family: adobe-caslon-pro, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
             font-style: italic; }
           .main_nav .wrapper .content .small .mobile_nav .sns .mail_to_me {
@@ -387,7 +354,6 @@ ol {
         .main_nav .wrapper .content .more a {
           color: #666;
           font-size: 14px;
-          font-size: 0.875rem;
           font-family: adobe-caslon-pro, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
           font-style: italic; }
         .main_nav .wrapper .content .more:after {
@@ -536,86 +502,62 @@ h1, h2, h3, h4, h5, h6 {
 h1, .h-alpha {
   font-family: PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 50px;
-  font-size: 3.125rem;
   font-weight: 300;
-  line-height: 50px;
-  line-height: 3.125rem; }
+  line-height: 50px; }
   @media screen and (min-width: 1024px) {
     h1, .h-alpha {
       font-size: 100px;
-      font-size: 6.25rem;
-      line-height: 100px;
-      line-height: 6.25rem; } }
+      line-height: 100px; } }
 
 h2, .h-beta {
   font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 45px;
-  font-size: 2.8125rem;
   font-weight: 300;
-  line-height: 45px;
-  line-height: 2.8125rem; }
+  line-height: 45px; }
   @media screen and (min-width: 1024px) {
     h2, .h-beta {
       font-size: 65px;
-      font-size: 4.0625rem;
-      line-height: 65px;
-      line-height: 4.0625rem; } }
+      line-height: 65px; } }
 
 h3, .h-gamma {
   font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 40px;
-  font-size: 2.5rem;
   font-weight: 300;
-  line-height: 40px;
-  line-height: 2.5rem; }
+  line-height: 40px; }
   @media screen and (min-width: 1024px) {
     h3, .h-gamma {
       font-size: 45px;
-      font-size: 2.8125rem;
-      line-height: 45px;
-      line-height: 2.8125rem; } }
+      line-height: 45px; } }
 
 h4, .h-delta {
   font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 35px;
-  font-size: 2.1875rem;
   font-weight: 300;
-  line-height: 35px;
-  line-height: 2.1875rem; }
+  line-height: 35px; }
   @media screen and (min-width: 1024px) {
     h4, .h-delta {
       font-size: 40px;
-      font-size: 2.5rem;
-      line-height: 40px;
-      line-height: 2.5rem; } }
+      line-height: 40px; } }
 
 h5, .h-epsilon {
   font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 30px;
-  font-size: 1.875rem;
   font-weight: 300;
-  line-height: 30px;
-  line-height: 1.875rem; }
+  line-height: 30px; }
   @media screen and (min-width: 1024px) {
     h5, .h-epsilon {
       font-size: 35px;
-      font-size: 2.1875rem;
-      line-height: 35px;
-      line-height: 2.1875rem; } }
+      line-height: 35px; } }
 
 h6, .h-zeta {
   font-family: NEW GROTESK SQUARE, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 25px;
-  font-size: 1.5625rem;
   font-weight: 300;
-  line-height: 25px;
-  line-height: 1.5625rem; }
+  line-height: 25px; }
   @media screen and (min-width: 1024px) {
     h6, .h-zeta {
       font-size: 30px;
-      font-size: 1.875rem;
-      line-height: 30px;
-      line-height: 1.875rem; } }
+      line-height: 30px; } }
 
 hr {
   border: none;
@@ -630,26 +572,20 @@ mark {
 p {
   font-family: EXCHANGE WEB, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 17px;
-  font-size: 1.0625rem;
   font-weight: 300;
   line-height: 23px;
-  line-height: 1.4375rem;
   color: black;
   margin: 10px 0; }
   @media screen and (min-width: 1024px) {
     p {
       font-size: 19px;
-      font-size: 1.1875rem;
-      line-height: 27px;
-      line-height: 1.6875rem; } }
+      line-height: 27px; } }
 
 small {
   font-family: BRUTAL, PingFang SC, Hiragino Sans GB, Arial, Microsoft YaHei, Helvetica Neue, sans-serif;
   font-size: 12px;
-  font-size: 0.75rem;
   font-weight: 300;
-  line-height: 12px;
-  line-height: 0.75rem; }
+  line-height: 12px; }
 
 strong {
   font-weight: 700; }
@@ -714,8 +650,7 @@ ol {
         line-height: 60px;
         padding: 0 12px;
         display: inline-block;
-        font-size: 14px;
-        font-size: 0.875rem; }
+        font-size: 14px; }
         .footer .footer_wapper ul li a {
           color: white; }
           .footer .footer_wapper ul li a:hover {

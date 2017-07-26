@@ -137,3 +137,51 @@
     }
 }
 
+///不同宽度下，条件数切换
+@mixin one-column-size(){
+    @include max-screen($CARD_LIST_2_COLUMN_BREAKPOINT - 1){
+        @content;
+    }
+}
+
+@mixin two-column-size(){
+    @include min-screen($CARD_LIST_2_COLUMN_BREAKPOINT){
+        @content;
+    }
+}
+
+@mixin three-column-size(){
+    @include min-screen($CARD_LIST_3_COLUMN_BREAKPOINT){
+        @content;
+    }
+}
+
+@mixin four-column-size(){
+    @include min-screen($CARD_LIST_4_COLUMN_BREAKPOINT){
+        @content;
+    }
+}
+
+@mixin five-column-size(){
+    @include min-screen($CARD_LIST_5_COLUMN_BREAKPOINT){
+        @content;
+    }
+}
+
+//切换成左右两栏
+@mixin card_switcher() {
+    article {
+        display: table;
+        .card_item_image {
+            display: table-cell;
+            width: 50%;
+            padding-right: 10px;
+        }
+        .card_item_info {
+            display: table-cell;
+            width: 55%;
+            padding-left: 10px;
+            vertical-align: middle;
+        }
+    }
+}

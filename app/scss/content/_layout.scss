@@ -1,0 +1,228 @@
+.article_and_more {
+    @include min-screen($TYPE_LARGE_COPY_WIDTH){
+        padding: 0 $DESKTOP_SIDE_GUTTER;
+    }
+    @include max-screen($TYPE_LARGE_COPY_WIDTH){
+        padding: 0 $TABLET_SIDE_GUTTER;
+    }
+    @include max-screen($TYPE_MEDIUM_COPY_WIDTH){
+        padding: 0 $MOBILE_SIDE_GUTTER;
+    }
+    .section_title {
+        font-size: 32px;
+        text-align: center;
+        position: relative;
+        margin: $MARGIN_SMALL  auto;
+        max-width: $TYPE_MAXIMUM_COPY_WIDTH;
+        @include max-screen($TYPE_MEDIUM_COPY_WIDTH) {
+            margin: $MARGIN_SMALL 0;
+        }
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            height: 1px;
+            z-index: 0;
+            background-color: black;
+            background-image: repeating-linear-gradient(
+                    90deg, 
+                    transparent, 
+                    transparent 1px, 
+                    rgba(255,255,255,1) 1px, 
+                    rgba(255,255,255,1) 3px);
+        }
+        span {
+            background: #FFF;
+            padding: 0 $PADDING_MEDIUM;
+            z-index: 1;
+            position: relative;
+        }
+    }
+    .section_content {
+        max-width: $TYPE_MAXIMUM_COPY_WIDTH;
+        margin: 0 auto;
+        display: table;
+        .article_list {
+            display: table-cell;
+            width: 70%;
+            padding: $PADDING_X_LARGE 0;
+            .film_review {
+                border-bottom: 1px solid #EAEAEA;
+                margin-bottom: $MARGIN_LARGE;
+                @include max-screen($TYPE_MEDIUM_COPY_WIDTH) {
+                    margin-bottom: $MARGIN_MEDIUM;
+                }
+                a {
+                    color: #000;
+                    &:hover {
+                        color: #C00000;
+                    }
+                }
+
+                footer {
+                    font-style: italic;
+                    p {color:#666;}
+                }
+                
+            }
+        }
+        .article_more {
+            display: table-cell;
+            width: 30%;
+            padding: $PADDING_X_LARGE 0 $PADDING_X_LARGE $PADDING_X_LARGE;
+            ul {
+                padding: $PADDING_XXX_SMALL 0;
+                margin-bottom: $MARGIN_MEDIUM;
+                li {
+                    list-style-type: square;
+                    list-style-position: inside;
+                    margin: 0;
+                    padding: 0;
+
+                    a {
+                        color:#333;
+                        &:hover {
+                            color: #C00000;
+                        }
+                    }
+                }
+            }
+            h3 {
+            }
+        }    
+        @include max-screen($TYPE_MEDIUM_COPY_WIDTH) {
+            .article_list {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            .article_more {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }    
+        }
+        @include screen($TYPE_LARGE_COPY_WIDTH,$TYPE_MAXIMUM_COPY_WIDTH){
+            .article_list {
+                padding: $PADDING_LARGE 0;
+            }
+            .article_more {
+                padding: $PADDING_LARGE 0 $PADDING_LARGE $PADDING_LARGE;
+            }  
+        }
+        @include screen($TYPE_MEDIUM_COPY_WIDTH,$TYPE_LARGE_COPY_WIDTH){
+            .article_list {
+                padding: $PADDING_MEDIUM 0;
+            }
+            .article_more {
+                padding: $PADDING_MEDIUM 0 $PADDING_MEDIUM $PADDING_MEDIUM;
+            }  
+        }
+        @include max-screen($TYPE_MEDIUM_COPY_WIDTH){
+            .article_list {
+                padding: $PADDING_SMALL 0;
+            }
+            .article_more {
+                padding: $PADDING_SMALL 0;
+            }  
+        }
+    }
+    .card_content{
+        max-width: $TYPE_MAXIMUM_COPY_WIDTH;
+        margin: 0 auto;
+        .image_card_list { //图集列表开始
+            display: block;
+            font-size: 0;
+            margin: 0 -20px;
+            
+            li.card_item {
+                display: inline-block;
+                vertical-align: top;
+                padding: 0 20px;
+                margin-bottom: 30px;
+                box-sizing: border-box;
+                article {
+                    @include font-size(16px);
+                    position: relative;
+
+                    .card_item_image {
+                        //background: #EEE;
+                        img {
+                            width: 100%;
+                            vertical-align: middle;
+                        }
+                    }
+
+                    .card_item_info {
+                        margin-top: 10px;
+                        h3 {
+                            @include font-size(20px);
+                            @include line-height(25px);
+                            a {
+                                color: black;
+                                &:hover {
+                                    color: #C00000;
+                                }
+                            }
+                        }
+                        aside {
+                            p {
+                                margin: 0;
+                            }
+                            p.auth {
+                                margin: 6px 0 10px 0;
+                                @include font-size(12px);
+                                @include line-height(14px);
+                                color: #111;
+                                span {
+                                    font-style: italic;
+                                    padding-right: 4px;
+                                }
+                            }
+                            p.parts {
+                                border-top: dashed 1px #ccc;
+                                @include font-size(12px);
+                                @include line-height(14px);
+                                padding-top: 6px;
+                                a {
+                                    color: #C00000;
+                                    &:hover {
+                                        color: #111;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            
+            @include one-column-size(){
+                li.card_item {
+                    width: 100%;
+                }
+                .card_item_switcher {
+                    @include card_switcher();
+                }
+            }
+            @include two-column-size(){
+                li.card_item {
+                    width: 50%;
+                }
+            }
+            @include four-column-size(){
+                li.card_item {
+                    width: 25%;
+                }
+            }
+
+
+
+        }
+    }
+
+}
+
+
+

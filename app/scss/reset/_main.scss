@@ -49,30 +49,22 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 %h-alpha {
-    @include font(null,50px, 300, 50px);
+    @include font(null,45px, 300, 45px);
     @include min-screen($TYPE_LARGE_COPY_WIDTH) {
-        @include font-size(100px);
-        @include line-height(100px);
+        @include font-size(80px);
+        @include line-height(80px);
     }
 }
 
 %h-beta {
-    @include font("NEW GROTESK SQUARE", 45px, 300, 45px);
+    @include font("NEW GROTESK SQUARE", 40px, 300, 40px);
     @include min-screen($TYPE_LARGE_COPY_WIDTH) {
-        @include font-size(65px);
-        @include line-height(65px);
+        @include font-size(60px);
+        @include line-height(60px);
     }
 }
 
 %h-gamma {
-    @include font("NEW GROTESK SQUARE", 40px, 300, 40px);
-    @include min-screen($TYPE_LARGE_COPY_WIDTH) {
-        @include font-size(45px);
-        @include line-height(45px);
-    }
-}
-
-%h-delta {
     @include font("NEW GROTESK SQUARE", 35px, 300, 35px);
     @include min-screen($TYPE_LARGE_COPY_WIDTH) {
         @include font-size(40px);
@@ -80,7 +72,7 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-%h-epsilon {
+%h-delta {
     @include font("NEW GROTESK SQUARE", 30px, 300, 30px);
     @include min-screen($TYPE_LARGE_COPY_WIDTH) {
         @include font-size(35px);
@@ -88,11 +80,19 @@ h1,h2,h3,h4,h5,h6 {
     }
 }
 
-%h-zeta {
+%h-epsilon {
     @include font("NEW GROTESK SQUARE", 25px, 300, 25px);
     @include min-screen($TYPE_LARGE_COPY_WIDTH) {
         @include font-size(30px);
         @include line-height(30px);
+    }
+}
+
+%h-zeta {
+    @include font("NEW GROTESK SQUARE", 20px, 300, 20px);
+    @include min-screen($TYPE_LARGE_COPY_WIDTH) {
+        @include font-size(25px);
+        @include line-height(25px);
     }
 }
 

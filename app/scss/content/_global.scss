@@ -1,0 +1,15 @@
+.global_center {
+    text-align: center;
+}
+.medium_but {
+    color: #C00000;
+    border: solid 1px #C00000;
+    @include font-size(12px);
+    padding: $PADDING_X_SMALL;
+    margin-top: $MARGIN_SMALL;
+    display: inline-block;
+    &:hover {
+        color: white;
+        background: #C00000;
+    }
+}

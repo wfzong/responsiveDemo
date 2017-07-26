@@ -682,15 +682,29 @@ ol {
             .footer .footer_wapper ul li:last-child:before {
               display: none; } }
 
+.global_center {
+  text-align: center; }
+
+.medium_but {
+  color: #C00000;
+  border: solid 1px #C00000;
+  font-size: 12px;
+  padding: 15px;
+  margin-top: 20px;
+  display: inline-block; }
+  .medium_but:hover {
+    color: white;
+    background: #C00000; }
+
 @media screen and (min-width: 1024px) {
   .article_and_more {
-    padding: 0 50px; } }
+    padding: 0 50px 50px 50px; } }
 @media screen and (max-width: 1024px) {
   .article_and_more {
-    padding: 0 40px; } }
+    padding: 0 40px 40px 40px; } }
 @media screen and (max-width: 700px) {
   .article_and_more {
-    padding: 0 20px; } }
+    padding: 0 20px 20px 20px; } }
 .article_and_more .section_title {
   font-size: 32px;
   text-align: center;
@@ -721,8 +735,9 @@ ol {
   display: table; }
   .article_and_more .section_content .article_list {
     display: table-cell;
+    vertical-align: top;
     width: 70%;
-    padding: 60px 0; }
+    padding: 40px 0; }
     .article_and_more .section_content .article_list .film_review {
       border-bottom: 1px solid #EAEAEA;
       margin-bottom: 40px; }
@@ -739,8 +754,9 @@ ol {
           color: #666; }
   .article_and_more .section_content .article_more {
     display: table-cell;
+    vertical-align: top;
     width: 30%;
-    padding: 60px 0 60px 60px; }
+    padding: 40px 0 40px 40px; }
     .article_and_more .section_content .article_more ul {
       padding: 5px 0;
       margin-bottom: 30px; }
@@ -753,7 +769,7 @@ ol {
           color: #333; }
           .article_and_more .section_content .article_more ul li a:hover {
             color: #C00000; }
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1023px) {
     .article_and_more .section_content .article_list {
       display: block;
       width: 100%;
@@ -761,22 +777,8 @@ ol {
     .article_and_more .section_content .article_more {
       display: block;
       width: 100%;
-      box-sizing: border-box; } }
-  @media screen and (min-width: 64em) and (max-width: 90em) {
-    .article_and_more .section_content .article_list {
-      padding: 40px 0; }
-    .article_and_more .section_content .article_more {
-      padding: 40px 0 40px 40px; } }
-  @media screen and (min-width: 43.75em) and (max-width: 64em) {
-    .article_and_more .section_content .article_list {
-      padding: 30px 0; }
-    .article_and_more .section_content .article_more {
-      padding: 30px 0 30px 30px; } }
-  @media screen and (max-width: 700px) {
-    .article_and_more .section_content .article_list {
-      padding: 20px 0; }
-    .article_and_more .section_content .article_more {
-      padding: 20px 0; } }
+      box-sizing: border-box;
+      padding: 0 0 40px 0; } }
 .article_and_more .card_content {
   max-width: 1440px;
   margin: 0 auto; }

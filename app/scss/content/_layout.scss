@@ -1,12 +1,12 @@
 .article_and_more {
     @include min-screen($TYPE_LARGE_COPY_WIDTH){
-        padding: 0 $DESKTOP_SIDE_GUTTER;
+        padding: 0 $DESKTOP_SIDE_GUTTER $DESKTOP_SIDE_GUTTER $DESKTOP_SIDE_GUTTER;
     }
     @include max-screen($TYPE_LARGE_COPY_WIDTH){
-        padding: 0 $TABLET_SIDE_GUTTER;
+        padding: 0 $TABLET_SIDE_GUTTER $TABLET_SIDE_GUTTER $TABLET_SIDE_GUTTER;
     }
     @include max-screen($TYPE_MEDIUM_COPY_WIDTH){
-        padding: 0 $MOBILE_SIDE_GUTTER;
+        padding: 0 $MOBILE_SIDE_GUTTER $MOBILE_SIDE_GUTTER $MOBILE_SIDE_GUTTER;
     }
     .section_title {
         font-size: 32px;
@@ -46,8 +46,9 @@
         display: table;
         .article_list {
             display: table-cell;
+            vertical-align: top;
             width: 70%;
-            padding: $PADDING_X_LARGE 0;
+            padding: $PADDING_LARGE 0;
             .film_review {
                 border-bottom: 1px solid #EAEAEA;
                 margin-bottom: $MARGIN_LARGE;
@@ -70,8 +71,9 @@
         }
         .article_more {
             display: table-cell;
+            vertical-align: top;
             width: 30%;
-            padding: $PADDING_X_LARGE 0 $PADDING_X_LARGE $PADDING_X_LARGE;
+            padding: $PADDING_LARGE 0 $PADDING_LARGE $PADDING_LARGE;
             ul {
                 padding: $PADDING_XXX_SMALL 0;
                 margin-bottom: $MARGIN_MEDIUM;
@@ -92,7 +94,7 @@
             h3 {
             }
         }    
-        @include max-screen($TYPE_MEDIUM_COPY_WIDTH) {
+        @include max-screen($TYPE_LARGE_COPY_WIDTH - 1) {
             .article_list {
                 display: block;
                 width: 100%;
@@ -102,32 +104,11 @@
                 display: block;
                 width: 100%;
                 box-sizing: border-box;
-            }    
-        }
-        @include screen($TYPE_LARGE_COPY_WIDTH,$TYPE_MAXIMUM_COPY_WIDTH){
-            .article_list {
-                padding: $PADDING_LARGE 0;
+                padding: 0 0 $PADDING_LARGE 0;
             }
-            .article_more {
-                padding: $PADDING_LARGE 0 $PADDING_LARGE $PADDING_LARGE;
-            }  
         }
-        @include screen($TYPE_MEDIUM_COPY_WIDTH,$TYPE_LARGE_COPY_WIDTH){
-            .article_list {
-                padding: $PADDING_MEDIUM 0;
-            }
-            .article_more {
-                padding: $PADDING_MEDIUM 0 $PADDING_MEDIUM $PADDING_MEDIUM;
-            }  
-        }
-        @include max-screen($TYPE_MEDIUM_COPY_WIDTH){
-            .article_list {
-                padding: $PADDING_SMALL 0;
-            }
-            .article_more {
-                padding: $PADDING_SMALL 0;
-            }  
-        }
+
+
     }
     .card_content{
         max-width: $TYPE_MAXIMUM_COPY_WIDTH;

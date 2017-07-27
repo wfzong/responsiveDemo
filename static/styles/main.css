@@ -689,7 +689,7 @@ ol {
   color: #C00000;
   border: solid 1px #C00000;
   font-size: 12px;
-  padding: 15px;
+  padding: 10px 15px;
   margin-top: 20px;
   display: inline-block; }
   .medium_but:hover {
@@ -791,7 +791,15 @@ ol {
       vertical-align: top;
       padding: 0 20px;
       margin-bottom: 30px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      -webkit-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .article_and_more .card_content .image_card_list li.card_item:hover {
+        opacity: 0.9;
+        filter: alpha(opacity=90); }
       .article_and_more .card_content .image_card_list li.card_item article {
         font-size: 16px;
         position: relative; }

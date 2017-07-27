@@ -5,7 +5,7 @@
     color: #C00000;
     border: solid 1px #C00000;
     @include font-size(12px);
-    padding: $PADDING_X_SMALL;
+    padding: $PADDING_XX_SMALL $PADDING_X_SMALL;
     margin-top: $MARGIN_SMALL;
     display: inline-block;
     &:hover {

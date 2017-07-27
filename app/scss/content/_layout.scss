@@ -124,6 +124,15 @@
                 padding: 0 20px;
                 margin-bottom: 30px;
                 box-sizing: border-box;
+                
+                @include transition(all 0.3s ease);
+                &:hover {
+                    @include opacity(0.9);
+                    //transform: translateY(-10px);
+                    //transform: scale(1.03);
+                    //transform: rotate(-5deg);
+                }
+
                 article {
                     @include font-size(16px);
                     position: relative;
